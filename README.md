@@ -1,5 +1,3 @@
-# EDITED
-
 This script requires the following Python packages:
 
     selenium
