@@ -6,7 +6,7 @@ import time
 
 
 def scrap(url,class_element_name,class_element_color,class_element_price,class_element_size):
-    service = Service('C:/Program Files/geckodriver.exe')
+    service = Service('C:/Program Files/geckodriver.exe') # change the path to match with yours 
     driver = webdriver.Firefox(service =service)
     driver.get(url)
     time.sleep(5)
