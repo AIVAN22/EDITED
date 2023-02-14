@@ -5,7 +5,9 @@ This script requires the following Python packages:
     json
 
 Make sure to have these packages installed before running the script.
-
+ 
+Geckodriver is a WebDriver implementation that allows you to control Firefox web browser. To use Geckodriver with Firefox, you need to have Geckodriver executable file in the system PATH or in the same folder as your browser executable file.  
+ 
 In addition, this script uses the Firefox web driver provided by GeckoDriver. The path to the driver executable file is hardcoded in the script and may need to be changed depending on the system configuration.
 Usage
 
