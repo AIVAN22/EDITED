@@ -1,19 +1,24 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.options import Options # add Options
 
 from bs4 import BeautifulSoup as bs
 import json
 import time
 
-profile_path = '/home/tester'
 
-options = Options()
-options.add_argument('--no-sandbox')
+
+profile_path = '/home/tester' # add path to Firefox 
+
+options = Options() # create options object 
+
+# add_argumenrs to the options 
+options.add_argument('--no-sandbox') 
 options.add_argument(f'--profile {profile_path}')
 options.add_argument('--disable-dev-shm-usage')
+
 service = Service('~/snap/firefox/2311') # change the path to match with yours 
-driver = webdriver.Firefox(options=options ,service =service)
+driver = webdriver.Firefox(options=options ,service =service) # add options objects 
 
 def scrap(url,class_element_name,class_element_color,class_element_price,class_element_size):
     driver.get(url)
